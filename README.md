@@ -13,24 +13,24 @@ The Kentucky Transportation Cabinet currently uses Google Cloud's BigQuery to ma
 ## Downloading the data
 
 To download NPMRDS data, go to the [Massive Data Downloader](https://npmrds.ritis.org/analytics/download/) and make sure that the following options are selected:<br>
-	1. Select TMC Segments from the appropriate provider and year 
-	    a. Select Kentucky as the Region
-	2. Select the date range (Typically one month at a time)
-	3. Make sure that all days of the week are selected.
-	4. Make sure that all times of day are selected.
-	5. Select ONLY the applicable vehicle type
-		a. Select the following fields: Speed, Historic average speed, Reference speed, Travel time, and Data Density
-	6. Select Minutes for travel time.
-	7. Include Null Values
-	8. Select "Don't Average"
-	9. Name the download "NPMRDS_[Year]_[Month]_[Vehicle Type]_WithNulls"
-	10. Get Notified by Email.
-	    a. Click Submit
-	    b. Go back to (5) and change the vehicle type
-	    c. Change the name in (9) to reflect the new vehicle type
-	    d. Click submit for the new file
-	    e. Repeat (c) through (e) for the final vehicle type
-	    f. Go to https://npmrds.ritis.org/analytics/my-history/ and download files once they are ready.
+	1. Select TMC Segments from the appropriate provider and year <br>
+	    a. Select Kentucky as the Region<br>
+	2. Select the date range (Typically one month at a time)<br>
+	3. Make sure that all days of the week are selected.<br>
+	4. Make sure that all times of day are selected.<br>
+	5. Select ONLY the applicable vehicle type<br>
+		a. Select the following fields: Speed, Historic average speed, Reference speed, Travel time, and Data Density<br>
+	6. Select Minutes for travel time.<br>
+	7. Include Null Values<br>
+	8. Select "Don't Average"<br>
+	9. Name the download "NPMRDS_[Year]_[Month]_[Vehicle Type]_WithNulls"<br>
+	10. Get Notified by Email.<br>
+	    a. Click Submit<br>
+	    b. Go back to (5) and change the vehicle type<br>
+	    c. Change the name in (9) to reflect the new vehicle type<br>
+	    d. Click submit for the new file<br>
+	    e. Repeat (c) through (e) for the final vehicle type<br>
+	    f. Go to https://npmrds.ritis.org/analytics/my-history/ and download files once they are ready.<br>
 
 Once all that is complete, you will need to extract the csv files and upload to your database.  IF you are using BigQuery, then the queries should work if the tables are set up in the same manner.  For table schema, see the json files in the table_schema directory.
 
