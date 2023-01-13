@@ -13,35 +13,35 @@ The Kentucky Transportation Cabinet currently uses Google Cloud's BigQuery to ma
 ## Downloading the data
 
 To download NPMRDS data, go to the [Massive Data Downloader](https://npmrds.ritis.org/analytics/download/) and make sure that the following options are selected:<br>
-    1. Select TMC Segments from the appropriate provider and year <br>
-       1. Select Kentucky as the Region<br>
-    2. Select the date range (Typically one month at a time)<br>
-    3. Make sure that all days of the week are selected.<br>
-    4. Make sure that all times of day are selected.<br>
-    5. Select ONLY the applicable vehicle type<br>
-        1. Select the following fields: Speed, Historic average speed, Reference speed, Travel time, and Data Density<br>
-    6. Select Minutes for travel time.<br>
-    7. Include Null Values<br>
-    8. Select "Don't Average"<br>
-    9. Name the download "NPMRDS_[Year]_[Month]_[Vehicle Type]_WithNulls"<br>
-    10. Get Notified by Email.<br>
-        1. Click Submit<br>
-        2. Go back to (5) and change the vehicle type<br>
-        3. Change the name in (9) to reflect the new vehicle type<br>
-        4. Click submit for the new file<br>
-        5. Repeat (10)(2) through (10)(4) for the final vehicle type<br>
-        6. Go to https://npmrds.ritis.org/analytics/my-history/ and download files once they are ready.<br>
+ |   1. Select TMC Segments from the appropriate provider and year <br>
+ |      1. Select Kentucky as the Region<br>
+ |   2. Select the date range (Typically one month at a time)<br>
+ |   3. Make sure that all days of the week are selected.<br>
+ |      4. Make sure that all times of day are selected.<br>
+ |      5. Select ONLY the applicable vehicle type<br>
+ |          1. Select the following fields: Speed, Historic average speed, Reference speed, Travel time, and Data Density<br>
+ |      6. Select Minutes for travel time.<br>
+ |      7. Include Null Values<br>
+ |      8. Select "Don't Average"<br>
+ |      9. Name the download "NPMRDS_[Year]_[Month]_[Vehicle Type]_WithNulls"<br>
+ |      10. Get Notified by Email.<br>
+ |          1. Click Submit<br>
+ |          2. Go back to (5) and change the vehicle type<br>
+ |          3. Change the name in (9) to reflect the new vehicle type<br>
+ |          4. Click submit for the new file<br>
+ |          5. Repeat (10)(2) through (10)(4) for the final vehicle type<br>
+ |          6. Go to https://npmrds.ritis.org/analytics/my-history/ and download files once they are ready.<br>
 
 Once all that is complete, you will need to extract the csv files and upload to your database.  IF you are using BigQuery, then the queries should work if the tables are set up in the same manner.  For table schema, see the json files in the table_schema directory.
 
 ## Tables used
 
 The following tables are used:<br>
-    `kytc-planning.Inrix_TMC_Metadata.INRIX_TMC_Metadata`<br>
-    `kytc-planning.Inrix_TMC_Data.inrix_tmc_2011_2016_all`<br>
-    `kytc-planning.Inrix_TMC_Data.inrix_tmc_2017_Present_all`<br>
-    `kytc-planning.Inrix_TMC_Data.inrix_tmc_2011_2016_trucks`<br>
-    `kytc-planning.Inrix_TMC_Data.inrix_tmc_2017_Present_trucks`<br>
+ |      `kytc-planning.Inrix_TMC_Metadata.INRIX_TMC_Metadata`<br>
+ |      `kytc-planning.Inrix_TMC_Data.inrix_tmc_2011_2016_all`<br>
+ |      `kytc-planning.Inrix_TMC_Data.inrix_tmc_2017_Present_all`<br>
+ |      `kytc-planning.Inrix_TMC_Data.inrix_tmc_2011_2016_trucks`<br>
+ |      `kytc-planning.Inrix_TMC_Data.inrix_tmc_2017_Present_trucks`<br>
 
 ## How to Run Each Query
 
@@ -54,15 +54,15 @@ Each query is meant to be run in sequence.  Tables not listed above are created 
 
 23 CFR § 490.511 - Calculation of National Highway System performance metrics.<br>
 § 490.511 Calculation of National Highway System performance metrics.<br>
-(a) Two performance metrics are required for the NHS Performance measures specified in § 490.507. These are:<br>
-    (1) Level of Travel Time Reliability (LOTTR) for the Travel Time Reliability measures in § 490.507(a) (referred to as the LOTTR metric).<br>
-    (2) [Reserved]<br>
-(b) The State DOT shall calculate the LOTTR metrics for each NHS reporting segment in accordance with the following:<br>
-    (1) Data sets shall be created from the travel time data set to be used to calculate the LOTTR metrics. This data set shall include, for each reporting segment, a ranked list of average travel times for all traffic (“all vehicles” in NPMRDS nomenclature), to the nearest second, for 15 minute periods of a population that:<br>
-        (i) [See Query];<br>
-        (ii) [See Query];<br>
-        (iii) [See Query];<br>
-        (iv) [See Query];<br>
+ |  (a) Two performance metrics are required for the NHS Performance measures specified in § 490.507. These are:<br>
+      (1) Level of Travel Time Reliability (LOTTR) for the Travel Time Reliability measures in § 490.507(a) (referred to as the LOTTR metric).<br>
+      (2) [Reserved]<br>
+ |  (b) The State DOT shall calculate the LOTTR metrics for each NHS reporting segment in accordance with the following:<br>
+      (1) Data sets shall be created from the travel time data set to be used to calculate the LOTTR metrics. This data set shall include, for each reporting segment, a ranked list of average travel times for all traffic (“all vehicles” in NPMRDS nomenclature), to the nearest second, for 15 minute periods of a population that:<br>
+ |      (i) [See Query];<br>
+ |            (ii) [See Query];<br>
+ |             (iii) [See Query];<br>
+ |             (iv) [See Query];<br>
 
 ### Queries
 
@@ -89,9 +89,9 @@ This query finds the maximum value for the level of travel time reliability.
 ### Subpart_E_6.sql
 
 This query joins the results from the last query to a custom metadata table that was created from the following sources:<br>
-    1. RITIS provided metadata from the "Easy Button"<br>
-    2. NPMRDS metadata from the shapefile for each year<br>
-    3. KYTC generated data from tagging the NPMRDS shapefile with KYTC's data using it's Highway Information System (HIS)<br>
+ |    1. RITIS provided metadata from the "Easy Button"<br>
+ |    2. NPMRDS metadata from the shapefile for each year<br>
+ |    3. KYTC generated data from tagging the NPMRDS shapefile with KYTC's data using it's Highway Information System (HIS)<br>
 
 Also, Annual Volume-miles are calculated at this step, both the total and the total mileage below a LOTTR of 1.5 for each TMC
 
