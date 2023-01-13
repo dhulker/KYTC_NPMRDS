@@ -1,0 +1,22 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "tmc_code",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "measurement_tstamp",
+    "type": "DATETIME"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "speed",
+    "type": "NUMERIC"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "travel_time_minutes",
+    "type": "NUMERIC"
+  }
+]

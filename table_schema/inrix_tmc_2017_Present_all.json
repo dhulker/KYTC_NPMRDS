@@ -1,0 +1,42 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "tmc_code",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "measurement_tstamp",
+    "type": "DATETIME"
+  },
+  {
+    "description": "Speed is recorded in mph as an integer. The harmonic average speed for all reporting vehicles on the segment.",
+    "mode": "NULLABLE",
+    "name": "speed",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "The historical average speed. Historical average speeds are calculated by the CATT Lab by taking the harmonic average of speeds on each segment for each hour of day and for each day of the week. For data from February 1, 2017 onward, this historical average speed is calculated over the period of February 1, 2017 - June 30th, 2017. For data prior to February 1, 2017, the average is calculated using the twelve-month period preceding November 2014.",
+    "mode": "NULLABLE",
+    "name": "average_speed",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "An approximation of free-flow speed for the segment. This value is calculated by the CATT Lab using the 95th percentile of the speeds between 10 PM and 5 AM. The reference speed is calculated over a 6-month period starting April 1st, 2017 - September 30th, 2017.",
+    "mode": "NULLABLE",
+    "name": "reference_speed",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Travel time recorded in minutes or seconds. It is the ratio between the segment length and the harmonic average speed for all reporting vehicles on the segment.",
+    "mode": "NULLABLE",
+    "name": "travel_time_minutes",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "refers to one of three values.  A: Fewer than five values B: Five to nine values C: More than nine values",
+    "mode": "NULLABLE",
+    "name": "data_density",
+    "type": "STRING"
+  }
+]

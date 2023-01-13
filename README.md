@@ -50,19 +50,24 @@ Each query is meant to be run in sequence.  Tables not listed above are created 
 
 ## Subpart E - Level of Overall Travel Time Reliability
 
-### Regulations
-
-23 CFR § 490.511 - Calculation of National Highway System performance metrics.<br>
 § 490.511 Calculation of National Highway System performance metrics.<br>
-&nbsp;&nbsp;(a) Two performance metrics are required for the NHS Performance measures specified in § 490.507. These are:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;(1) Level of Travel Time Reliability (LOTTR) for the Travel Time Reliability measures in § 490.507(a) (referred to as the LOTTR metric).<br>
+ &nbsp;&nbsp;(a) Two performance metrics are required for the NHS Performance measures specified in § 490.507. These are:<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;(1) Level of Travel Time Reliability (LOTTR) for the Travel Time Reliability measures in § 490.507(a) (referred to as the LOTTR metric).<br>
 &nbsp;&nbsp;&nbsp;&nbsp;(2) [Reserved]<br>
-&nbsp;&nbsp;(b) The State DOT shall calculate the LOTTR metrics for each NHS reporting segment in accordance with the following:<br>
-&nbsp;&nbsp;(1) Data sets shall be created from the travel time data set to be used to calculate the LOTTR metrics. This data set shall include, for each reporting segment, a ranked list of average travel times for all traffic (“all vehicles” in NPMRDS nomenclature), to the nearest second, for 15 minute periods of a population that:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) [See Query];<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) [See Query];<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iii) [See Query];<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iv) [See Query];<br>
+ &nbsp;&nbsp;(b) The State DOT shall calculate the LOTTR metrics for each NHS reporting segment in accordance with the following:
+&nbsp;&nbsp;&nbsp;&nbsp;(1) Data sets shall be created from the travel time data set to be used to calculate the LOTTR metrics. This data set shall include, for each reporting segment, a ranked list of average travel times for all traffic (“all vehicles” in NPMRDS nomenclature), to the nearest second, for 15 minute periods of a population that:
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) Includes travel times occurring between the hours of 6 a.m. and 10 a.m. for every weekday (Monday-Friday) from January 1st through December 31st of the same year;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) Includes travel times occurring between the hours of 10 a.m. and 4 p.m. for every weekday (Monday-Friday) from January 1st through December 31st of the same year;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iii) Includes travel times occurring between the hours of 4 p.m. and 8 p.m. for every weekday (Monday-Friday) from January 1st through December 31st of the same year; and
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iv) Includes travel times occurring between the hours of 6: a.m. and 8: p.m. for every weekend day (Saturday-Sunday) from January 1st through December 31st of the same year.
+ &nbsp;&nbsp;&nbsp;&nbsp;(2) The Normal Travel Time (50th percentile) shall be determined from each data set defined under paragraph (b)(1) of this section as the time in which 50 percent of the times in the data set are shorter in duration and 50 percent are longer in duration. The 80th percentile travel time shall be determined for each data set defined under paragraph (b)(1) of this section as the time in which 80 percent of the times in the data set are shorter in duration and 20 percent are longer in duration. Both the Normal and 80th percentile travel times can be determined by plotting the data on a travel time cumulative probability distribution graph or using the percentile functions available in spreadsheet and other analytical tools.
+ &nbsp;&nbsp;&nbsp;&nbsp;(3) Four LOTTR metrics shall be calculated for each reporting segment; one for each data set defined under paragraph (b)(1) of this section as the 80th percentile travel time divided by the 50th percentile travel time and rounded to the nearest hundredth.
+ &nbsp;&nbsp;(c)-(d) [Reserved]
+ &nbsp;&nbsp;(e) Starting in 2018 and annually thereafter, State DOTs shall report the LOTTR metrics, defined in paragraph (b) of this section, in accordance with HPMS Field Manual by June 15th of each year for the previous year's measures.
+ &nbsp;&nbsp;&nbsp;&nbsp;(1) Metrics are reported to HPMS by reporting segment. All reporting segments where the NPMRDS is used shall be referenced by NPMRDS TMC(s) or HPMS section(s). If a State DOT elects to use, in part or in whole, the equivalent data set, all reporting segment shall be referenced by HPMS section(s); and
+ &nbsp;&nbsp;&nbsp;&nbsp;(2) The LOTTR metric (to the nearest hundredths) for each of the four time periods identified in paragraphs (b)(1)(i) through (iv) of this section: the corresponding 80th percentile travel times (to the nearest second), the corresponding Normal (50th percentile) Travel Times (to the nearest second), and directional AADTs. If a State DOT does not elect to use FHWA supplied occupancy factor, as provided in § 490.507(d), that State DOT shall report vehicle occupancy factor (to the nearest tenth) to HPMS.
+ &nbsp;&nbsp;(f) [Reserved]
+[82 FR 6031, Jan. 18, 2017, as amended at 83 FR 24936, May 31, 2018]
 
 ### Queries
 

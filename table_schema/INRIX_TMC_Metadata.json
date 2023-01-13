@@ -1,0 +1,347 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "ROW_ORDER",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "TMC_AND_YEAR",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_Year_Record",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_State_Code",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_Travel_Time_Code",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_F_System",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_Urban_Code",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_Facility_Type",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_NHS",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_Segment_Length",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_Directionality",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_DIR_AADT",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_PHED",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_OCC_FAC",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_METRIC_SOURCE",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_G_Evening_Peak",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_G_Speed_Limit",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_G_AVO_Car",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_G_AVO_Bus",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_G_AVO_Truck",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PM3_G_AVO",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_ID",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Tmc",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_TmcType",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_RoadNumber",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_RoadName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_IsPrimary",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_FirstName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_TmcLinear",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Country",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_State",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_County",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Zip",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Direction",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_StartLat",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_StartLong",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_EndLat",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_EndLong",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Miles",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_FRC",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Border_Set",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_F_System",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Urban_Code",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_FacilType",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_StrucType",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_ThruLanes",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Route_Numb",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Route_Sign",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Route_Qual",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_AltRteName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_AADT",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_AADT_Singl",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_AADT_Combi",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_NHS",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_NHS_Pct",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Strhnt_Typ",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Strhnt_Pct",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "RITIS_Truck",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_CO_NUM",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_CO",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "kytc_district",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_MPO_PL_AREA",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_MPO_URBAN_AREA",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_ADD",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_Inc_Area",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_TMC_Class_1",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_TMC_Class_2",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_RSE",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "KYTC_LWA_SL",
+    "type": "INTEGER"
+  }
+]
