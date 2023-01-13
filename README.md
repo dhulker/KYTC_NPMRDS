@@ -14,23 +14,23 @@ The Kentucky Transportation Cabinet currently uses Google Cloud's BigQuery to ma
 
 To download NPMRDS data, go to the [Massive Data Downloader](https://npmrds.ritis.org/analytics/download/) and make sure that the following options are selected:<br>
 	1. Select TMC Segments from the appropriate provider and year <br>
-	    a. Select Kentucky as the Region<br>
+	    1. Select Kentucky as the Region<br>
 	2. Select the date range (Typically one month at a time)<br>
 	3. Make sure that all days of the week are selected.<br>
 	4. Make sure that all times of day are selected.<br>
 	5. Select ONLY the applicable vehicle type<br>
-		a. Select the following fields: Speed, Historic average speed, Reference speed, Travel time, and Data Density<br>
+		1. Select the following fields: Speed, Historic average speed, Reference speed, Travel time, and Data Density<br>
 	6. Select Minutes for travel time.<br>
 	7. Include Null Values<br>
 	8. Select "Don't Average"<br>
 	9. Name the download "NPMRDS_[Year]_[Month]_[Vehicle Type]_WithNulls"<br>
 	10. Get Notified by Email.<br>
-	    a. Click Submit<br>
-	    b. Go back to (5) and change the vehicle type<br>
-	    c. Change the name in (9) to reflect the new vehicle type<br>
-	    d. Click submit for the new file<br>
-	    e. Repeat (c) through (e) for the final vehicle type<br>
-	    f. Go to https://npmrds.ritis.org/analytics/my-history/ and download files once they are ready.<br>
+	    1. Click Submit<br>
+	    2. Go back to (5) and change the vehicle type<br>
+	    3. Change the name in (9) to reflect the new vehicle type<br>
+	    4. Click submit for the new file<br>
+	    5. Repeat (10)(2) through (10)(4) for the final vehicle type<br>
+	    6. Go to https://npmrds.ritis.org/analytics/my-history/ and download files once they are ready.<br>
 
 Once all that is complete, you will need to extract the csv files and upload to your database.  IF you are using BigQuery, then the queries should work if the tables are set up in the same manner.  For table schema, see the json files in the table_schema directory.
 
